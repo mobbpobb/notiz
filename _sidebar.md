@@ -8,3 +8,7 @@
   - [RAID 0 ähnlich: Simple Layout](windows-server-2022/storage-spaces/raid-0-simple-layout.md)
   - [RAID 1 ähnlich: Mirror](windows-server-2022/storage-spaces/raid-1-mirror.md)
   - [RAID 5 ähnlich: Parity](windows-server-2022/storage-spaces/raid-5-parity.md)
+
+- DNS
+  - [Überblick](dns/dnstest.md)
+  
