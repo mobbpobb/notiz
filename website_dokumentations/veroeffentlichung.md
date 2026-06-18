@@ -1,13 +1,12 @@
 # Veröffentlichung
-
+_________________________________
 ## Arbeitsordner
 
 `c:\work\docs`
-
+_________________________________
 ## Manuelle Veröffentlichung mit Cloudflare
 
 ### 1. Erstellung
-
 Cloudflare:
 > Compute  
 > Workers und Pages  
@@ -17,7 +16,7 @@ Cloudflare:
 > Worker-Name eingeben  
 > Bereitstellen  
 > Besuchen Sie  
-<-- Statt <br> am Zeilenende zwei Leerzeichen setzen -->
+<!-- Statt <br> am Zeilenende zwei Leerzeichen setzen -->
 
 ### 2. Aktualisierung
 
@@ -27,7 +26,6 @@ Cloudflare:
 - *Ordner* hochladen
 - Bereitstelle
 - Besuchen Sie
-
 _________________________________
 ## Veröffentlichung mit GitHub
 
@@ -35,8 +33,8 @@ _________________________________
 
 #### 1-1. GitHub vorbereiten
 GitHub:
-> Create New 
-> neues Repository
+* Create New 
+* neues Repository
 
 #### 1-2. Öffentlichen Ordner auf GitHub pushen
 Windows CMD:
