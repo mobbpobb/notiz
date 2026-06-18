@@ -9,16 +9,14 @@ c:\work\docs
 ### 1. Erstellung
 
 Cloudflare:
-> Compute
-Workers und Pages
->> Anwendung erstellen
->
-
+> Compute  
+> Workers und Pages  
+> Anwendung erstellen  
 > Upload your static files
-*Ordner* hochladen 
-Worker-Name eingeben
-Bereitstellen 
-Besuchen Sie
+> *Ordner* hochladen 
+> Worker-Name eingeben
+> Bereitstellen 
+> Besuchen Sie
 
 ### 2. Aktualisierung
 
