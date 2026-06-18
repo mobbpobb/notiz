@@ -1,29 +1,31 @@
 # Veröffentlichung
 
-## Manuelle Veröffentlichung mit Cloudflare
+## * Manuelle Veröffentlichung mit Cloudflare
 
-### Erstellung
-```
-Cloudflare > "Workers und Pages" > "Anwendung erstellen" > "Upload your static files" > "docs"-Ordner hochladen > "Worker-Name": notiz > Bereitstellen -> "Besuchen Sie"
-* "docs"-Ordner (in dem "index.html" direkt liegt) 
-```
-> Cloudflare 
-> "Workers und Pages" 
-> "Anwendung erstellen" 
-> "Upload your static files" 
-> "docs"-Ordner hochladen 
-> "Worker-Name": notiz 
-> Bereitstellen 
-> "Besuchen Sie"
+### > Erstellung
 
-### Aktualisierung
-```
-"Worker-Name": notiz > "Neue Bereitstellung" > "docs"-Ordner hochladen > Bereitstellen -> "Besuchen Sie"
-```
+Cloudflare:
+- Compute
+- Workers und Pages
+- Anwendung erstellen
+- Upload your static files
+- Ordner hochladen 
+- Worker-Name eingeben
+- Bereitstellen 
+- Besuchen Sie
 
-## Veröffentlichung mit GitHub
+### > Aktualisierung
 
-### Erstellung
+Cloudflare:
+- "Worker-Name"
+- Neue Bereitstellung
+- Ordner hochladen
+- Bereitstelle
+- Besuchen Sie
+
+## * Veröffentlichung mit GitHub
+
+### 1. Erstellung
 
 #### GitHub vorbereiten
 ```
