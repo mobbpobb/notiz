@@ -7,6 +7,8 @@
 Cloudflare > "Workers und Pages" > "Anwendung erstellen" > "Upload your static files" > "docs"-Ordner hochladen > "Worker-Name": notiz > Bereitstellen -> "Besuchen Sie"
 * "docs"-Ordner (in dem "index.html" direkt liegt) 
 ```
+Cloudflare > "Workers und Pages" > "Anwendung erstellen" > "Upload your static files" > "docs"-Ordner hochladen > "Worker-Name": notiz > Bereitstellen -> "Besuchen Sie"
+* "docs"-Ordner (in dem "index.html" direkt liegt) 
 
 ### Aktualisierung
 ```
@@ -33,7 +35,7 @@ git remote add origin https://github.com/DEIN-NAME/DEIN-REPO.git
 git push -u origin main
 ```
 
-* Wenn schon ein falsches `origin` gesetzt ist:
+(Wenn schon ein falsches `origin` gesetzt ist:)
 ```cmd
 git remote remove origin
 git remote add origin https://github.com/DEIN-NAME/DEIN-REPO.git
