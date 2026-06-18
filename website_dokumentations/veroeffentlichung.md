@@ -10,18 +10,20 @@ c:\work\docs
 
 Cloudflare:
 > Compute
-> Workers und Pages
-> Anwendung erstellen
+Workers und Pages
+>> Anwendung erstellen
+>
+
 > Upload your static files
-> *Ordner* hochladen 
-> Worker-Name eingeben
-> Bereitstellen 
-> Besuchen Sie
+*Ordner* hochladen 
+Worker-Name eingeben
+Bereitstellen 
+Besuchen Sie
 
 ### 2. Aktualisierung
 
 Cloudflare:
-- **Worker-Name*
+- *Worker-Name*
 - Neue Bereitstellung
 - *Ordner* hochladen
 - Bereitstelle
