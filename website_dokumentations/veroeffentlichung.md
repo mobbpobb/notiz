@@ -7,8 +7,14 @@
 Cloudflare > "Workers und Pages" > "Anwendung erstellen" > "Upload your static files" > "docs"-Ordner hochladen > "Worker-Name": notiz > Bereitstellen -> "Besuchen Sie"
 * "docs"-Ordner (in dem "index.html" direkt liegt) 
 ```
-Cloudflare > "Workers und Pages" > "Anwendung erstellen" > "Upload your static files" > "docs"-Ordner hochladen > "Worker-Name": notiz > Bereitstellen -> "Besuchen Sie"
-* "docs"-Ordner (in dem "index.html" direkt liegt) 
+> Cloudflare 
+> "Workers und Pages" 
+> "Anwendung erstellen" 
+> "Upload your static files" 
+> "docs"-Ordner hochladen 
+> "Worker-Name": notiz 
+> Bereitstellen 
+> "Besuchen Sie"
 
 ### Aktualisierung
 ```
