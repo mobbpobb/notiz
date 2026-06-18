@@ -48,7 +48,7 @@ git branch -M main
 git remote add origin https://github.com/DEIN-NAME/DEIN-REPO.git
 git push -u origin main
 ```
-* Wenn schon ein falsches `origin` gesetzt ist:
+(Wenn schon ein falsches `origin` gesetzt ist:)
 ```
 git remote remove origin
 git remote add origin https://github.com/DEIN-NAME/DEIN-REPO.git
@@ -56,11 +56,13 @@ git remote add origin https://github.com/DEIN-NAME/DEIN-REPO.git
 
 #### 1-3. Cloudflare mit GitHub verbinden
 Cloudflare:
+```
 > Workers und Pages
 > Anwendung erstellen 
-> Connect GitHub. Dann dein Repository auswählen (Optionen:none und leer)
-
-
+> Connect GitHub. 
+> Repository auswählen
+> (Optionen:none und leer)
+```
 
 ### 2. Aktualisierung mit GitHub
 Windows CMD:
