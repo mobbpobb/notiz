@@ -1,5 +1,9 @@
 # Veröffentlichung
 
+## Arbeitsordner
+
+c:\work\docs
+
 ## Manuelle Veröffentlichung mit Cloudflare
 
 ### 1. Erstellung
@@ -9,7 +13,7 @@ Cloudflare:
 > Workers und Pages
 > Anwendung erstellen
 > Upload your static files
-> Ordner hochladen 
+> *Ordner* hochladen 
 > Worker-Name eingeben
 > Bereitstellen 
 > Besuchen Sie
@@ -17,23 +21,25 @@ Cloudflare:
 ### 2. Aktualisierung
 
 Cloudflare:
-- "Worker-Name"
+- **Worker-Name*
 - Neue Bereitstellung
-- Ordner hochladen
+- *Ordner* hochladen
 - Bereitstelle
 - Besuchen Sie
 
-## * Veröffentlichung mit GitHub
+_________________________________
+## Veröffentlichung mit GitHub
 
 ### 1. Erstellung
 
-#### GitHub vorbereiten
-```
-GitHub > Create New > "neues Repository"
-```
+#### 1-1. GitHub vorbereiten
+GitHub:
+> Create New 
+> neues Repository
 
-#### Öffentlichen Ordner auf GitHub pushen
-```cmd
+#### 1-2. Öffentlichen Ordner auf GitHub pushen
+Windows CMD:
+```
 cd C:\work\docs
 git init
 git add .
@@ -42,21 +48,23 @@ git branch -M main
 git remote add origin https://github.com/DEIN-NAME/DEIN-REPO.git
 git push -u origin main
 ```
-
-(Wenn schon ein falsches `origin` gesetzt ist:)
-```cmd
+* Wenn schon ein falsches `origin` gesetzt ist:
+```
 git remote remove origin
 git remote add origin https://github.com/DEIN-NAME/DEIN-REPO.git
 ```
 
-#### Cloudflare mit GitHub verbinden
-```
-Cloudflare > "Workers und Pages" > "Anwendung erstellen" > Connect GitHub. Dann dein Repository auswählen (Optionen:none und leer)
-```
+#### 1-3. Cloudflare mit GitHub verbinden
+Cloudflare:
+> Workers und Pages
+> Anwendung erstellen 
+> Connect GitHub. Dann dein Repository auswählen (Optionen:none und leer)
 
 
-### Aktualisierung mit GitHub
-```cmd
+
+### 2. Aktualisierung mit GitHub
+Windows CMD:
+```
 cd C:\work\docs
 git add .
 git commit -m "Änderung"
