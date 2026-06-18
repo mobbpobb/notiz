@@ -2,7 +2,7 @@
 
 ## Arbeitsordner
 
-c:\work\docs
+`c:\work\docs`
 
 ## Manuelle Veröffentlichung mit Cloudflare
 
@@ -12,11 +12,12 @@ Cloudflare:
 > Compute  
 > Workers und Pages  
 > Anwendung erstellen  
-> Upload your static files
-> *Ordner* hochladen 
-> Worker-Name eingeben
-> Bereitstellen 
-> Besuchen Sie
+> Upload your static files  
+> *Ordner* hochladen  
+> Worker-Name eingeben  
+> Bereitstellen  
+> Besuchen Sie  
+<-- Statt <br> am Zeilenende zwei Leerzeichen setzen -->
 
 ### 2. Aktualisierung
 
@@ -59,7 +60,7 @@ Cloudflare:
 ```
 > Workers und Pages
 > Anwendung erstellen 
-> Connect GitHub. 
+> Connect GitHub
 > Repository auswählen
 > (Optionen:none und leer)
 ```
