@@ -1,20 +1,20 @@
 # Veröffentlichung
 
-## * Manuelle Veröffentlichung mit Cloudflare
+## Manuelle Veröffentlichung mit Cloudflare
 
-### > Erstellung
+### 1. Erstellung
 
 Cloudflare:
-- Compute
-- Workers und Pages
-- Anwendung erstellen
-- Upload your static files
-- Ordner hochladen 
-- Worker-Name eingeben
-- Bereitstellen 
-- Besuchen Sie
+> Compute
+> Workers und Pages
+> Anwendung erstellen
+> Upload your static files
+> Ordner hochladen 
+> Worker-Name eingeben
+> Bereitstellen 
+> Besuchen Sie
 
-### > Aktualisierung
+### 2. Aktualisierung
 
 Cloudflare:
 - "Worker-Name"
