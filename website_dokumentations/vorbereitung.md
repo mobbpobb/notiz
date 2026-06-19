@@ -1,42 +1,36 @@
 # Vorbereitung
-
+_________________________________
 ## Werkzeuge
 
-### Node.js (LTS) installieren
+### 1. Node.js (LTS) installieren
 Website öffnen: https://nodejs.org
-
-- Grünen **LTS**-Button klicken.
-- Die `.msi`-Datei starten.
-- Immer **Weiter** klicken.
-- Standard-Einstellungen lassen.
-
-In `cmd` prüfen:
-
-```bash
+```
+> Grünen **LTS**-Button klicken.
+> Die `.msi`-Datei starten.
+> Immer **Weiter** klicken.
+> Standard-Einstellungen lassen.
+```
+In Windows-`CMD` prüfen:
+```cmd
 node -v
 npm -v
 ```
 
-### Docsify-CLI installieren
-
-```bash
+### 2-1. Docsify-CLI installieren
+```cmd
 npm i docsify-cli -g
 ```
-
-## Docsify-Projekt anlegen
-
-```bash
+### 2-2. Docsify-Projekt anlegen
+```cmd
 cd C:\work
 mkdir docs
 cd docs
 docsify init .
 ```
-
 Danach gibt es `index.html` und `README.md` im Ordner **docs**.
 
-## Eigene Struktur
+### 3. Eigene Struktur
 Im Ordner **docs** liegen zum Beispiel diese Dateien:
-
 - `README.md` – Übersicht / Startseite
 - `_sidebar.md` – Navigation
 - `lab-umgebung/aktuelle-einstellungen.md`
@@ -45,7 +39,7 @@ Im Ordner **docs** liegen zum Beispiel diese Dateien:
 - `windows-server-2022/storage-spaces/raid-1-mirror.md`
 - `windows-server-2022/storage-spaces/raid-5-parity.md`
 
-### Beispiel für `_sidebar.md`
+####  Beispiel für `_sidebar.md`
 
 ```md
 - [Startseite](/)

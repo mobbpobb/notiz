@@ -12,10 +12,10 @@ Cloudflare:
 > Workers und Pages  
 > Anwendung erstellen  
 > Upload your static files  
-> *Ordner* hochladen  
-> Worker-Name eingeben  
-> Bereitstellen  
-> Besuchen Sie  
+-> *Ordner* hochladen 
+-> Worker-Name eingeben 
+-> Bereitstellen  
+-> Besuchen Sie  
 <!-- Statt <br> am Zeilenende zwei Leerzeichen setzen -->
 
 ### 2. Aktualisierung
@@ -23,9 +23,9 @@ Cloudflare:
 Cloudflare:
 - *Worker-Name*
 - Neue Bereitstellung
-- *Ordner* hochladen
-- Bereitstelle
-- Besuchen Sie
+-> *Ordner* hochladen
+-> Bereitstelle
+-> Besuchen Sie
 _________________________________
 ## Veröffentlichung mit GitHub
 
@@ -38,7 +38,7 @@ GitHub:
 
 #### 1-2. Öffentlichen Ordner auf GitHub pushen
 Windows CMD:
-```
+```cmd
 cd C:\work\docs
 git init
 git add .
