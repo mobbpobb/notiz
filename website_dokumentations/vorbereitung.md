@@ -36,15 +36,15 @@ docs
  ├─_sidebar.md (Navigation)  
  ├─lab-umgebung
    ├─aktuelle-einstellungen.md
- ├─`windows-server-2022`  
-   ├─`windows-server-2022/storage-spaces/overview.md`  
-   ├─`windows-server-2022/storage-spaces/raid-0-simple-layout.md`  
-   ├─`windows-server-2022/storage-spaces/raid-1-mirror.md`  
-   ├─`windows-server-2022/storage-spaces/raid-5-parity.md`  
+ ├─windows-server-2022
+   ├─storage-spaces
+    ├─overview.md  
+    ├─windows-server-2022/storage-spaces/raid-0-simple-layout.md
+    ├─windows-server-2022/storage-spaces/raid-1-mirror.md  
+    ├─windows-server-2022/storage-spaces/raid-5-parity.md
 ```
 
-####  - Beispiel für `_sidebar.md`
-
+in `_sidebar.md`
 ```md
 - [Startseite](/)
 
@@ -76,39 +76,11 @@ In `index.html`:
 _________________________________
 ## 5. Lokalen Server starten
 
-```bash
+```cmd
 cd C:\work\docs
 docsify serve .
 ```
-
 Dann im Browser öffnen:
-
-```text
+```
 http://localhost:3000
 ```
-
-## Sidebar-Hauptpunkte
-
-### Problem
-Wenn ein Hauptpunkt wie **Lab-Umgebung** klickbar aussieht, aber keine sichtbare Änderung bringt, ist das leicht missverständlich.
-
-### Gute Lösung
-Hauptpunkte nur als **Text** anzeigen.  
-Nur die Unterpunkte sind echte Links.
-
-```md
-- [Startseite](/)
-
-- Lab-Umgebung
-  - [Aktuelle Einstellungen](#/lab-umgebung/aktuelle-einstellungen)
-
-- Datenträger / Storage Spaces
-  - [Überblick](#/windows-server-2022/storage-spaces/overview)
-  - [RAID 0 ähnlich: Simple Layout](#/windows-server-2022/storage-spaces/raid-0-simple-layout)
-  - [RAID 1 ähnlich: Mirror](#/windows-server-2022/storage-spaces/raid-1-mirror)
-  - [RAID 5 ähnlich: Parity](#/windows-server-2022/storage-spaces/raid-5-parity)
-```
-
-Alternative:  
-Hauptpunkte bekommen eine eigene Übersichtsseite.  
-Das ist gut, wenn später mehr Inhalte dazukommen.
