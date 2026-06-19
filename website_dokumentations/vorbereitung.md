@@ -30,14 +30,16 @@ docsify init .
 Danach gibt es `index.html` und `README.md` im Ordner **docs**.
 _________________________________
 ## 3. Eigene Struktur
-Im Ordner **docs** liegen zum Beispiel diese Dateien:
-- `README.md` – Übersicht / Startseite
-- `_sidebar.md` – Navigation
-- `lab-umgebung/aktuelle-einstellungen.md`
-- `windows-server-2022/storage-spaces/overview.md`
-- `windows-server-2022/storage-spaces/raid-0-simple-layout.md`
-- `windows-server-2022/storage-spaces/raid-1-mirror.md`
-- `windows-server-2022/storage-spaces/raid-5-parity.md`
+`docs`
+ ├─`README.md` (Übersicht / Startseite)
+ ├─`_sidebar.md` (Navigation)
+ ├─`lab-umgebung`
+   ├─`aktuelle-einstellungen.md`
+ ├─`windows-server-2022`
+   ├─`windows-server-2022/storage-spaces/overview.md`
+   ├─`windows-server-2022/storage-spaces/raid-0-simple-layout.md`
+   ├─`windows-server-2022/storage-spaces/raid-1-mirror.md`
+   ├─`windows-server-2022/storage-spaces/raid-5-parity.md`
 
 ####  - Beispiel für `_sidebar.md`
 
