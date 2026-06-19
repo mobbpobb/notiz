@@ -30,7 +30,7 @@ docsify init .
 Danach gibt es `index.html` und `README.md` im Ordner **docs**.
 _________________________________
 ## 3. Eigene Struktur
-```md
+```explorer
 docs
  ├─README.md (Übersicht / Startseite)  
  ├─_sidebar.md (Navigation)  
@@ -38,10 +38,10 @@ docs
    ├─aktuelle-einstellungen.md
  ├─windows-server-2022
    ├─storage-spaces
-    ├─overview.md  
-    ├─windows-server-2022/storage-spaces/raid-0-simple-layout.md
-    ├─windows-server-2022/storage-spaces/raid-1-mirror.md  
-    ├─windows-server-2022/storage-spaces/raid-5-parity.md
+     ├─overview.md  
+     ├─windows-server-2022/storage-spaces/raid-0-simple-layout.md
+     ├─windows-server-2022/storage-spaces/raid-1-mirror.md  
+     ├─windows-server-2022/storage-spaces/raid-5-parity.md
 ```
 
 in `_sidebar.md`

@@ -8,24 +8,28 @@ _________________________________
 
 ### 1. Erstellung
 Cloudflare:
+```
 > Compute  
 > Workers und Pages  
 > Anwendung erstellen  
 > Upload your static files  
--> *Ordner* hochladen 
--> Worker-Name eingeben 
--> Bereitstellen  
--> Besuchen Sie  
+> *Ordner* hochladen 
+> Worker-Name eingeben 
+> Bereitstellen  
+> Besuchen Sie
+Cloudflare:
+```
 <!-- Statt <br> am Zeilenende zwei Leerzeichen setzen -->
 
 ### 2. Aktualisierung
-
 Cloudflare:
-- *Worker-Name*
-- Neue Bereitstellung
--> *Ordner* hochladen
--> Bereitstelle
--> Besuchen Sie
+```
+> *Worker-Name*
+> Neue Bereitstellung
+> *Ordner* hochladen
+> Bereitstelle
+> Besuchen Sie
+```
 _________________________________
 ## Veröffentlichung mit GitHub
 
@@ -33,8 +37,10 @@ _________________________________
 
 #### 1-1. GitHub vorbereiten
 GitHub:
-* Create New 
-* neues Repository
+```
+> Create New 
+> neues Repository
+```
 
 #### 1-2. Öffentlichen Ordner auf GitHub pushen
 Windows CMD:
