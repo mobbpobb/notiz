@@ -1,8 +1,8 @@
 # Vorbereitung
 _________________________________
-## Werkzeuge
+## 1. Werkzeuge
 
-### 1. Node.js (LTS) installieren
+### 1-1. Node.js (LTS) installieren
 Website öffnen: https://nodejs.org
 ```
 > Get Node.js
@@ -15,11 +15,12 @@ node -v
 npm -v
 ```
 
-### 2-1. Docsify-CLI installieren
+### 1-2. Docsify-CLI installieren
 ```cmd
 npm i docsify-cli -g
 ```
-### 2-2. Docsify-Projekt anlegen
+_________________________________
+## 2. Docsify-Projekt anlegen
 ```cmd
 cd C:\work
 mkdir docs
@@ -27,8 +28,8 @@ cd docs
 docsify init .
 ```
 Danach gibt es `index.html` und `README.md` im Ordner **docs**.
-
-### 3. Eigene Struktur
+_________________________________
+## 3. Eigene Struktur
 Im Ordner **docs** liegen zum Beispiel diese Dateien:
 - `README.md` – Übersicht / Startseite
 - `_sidebar.md` – Navigation
@@ -52,28 +53,13 @@ Im Ordner **docs** liegen zum Beispiel diese Dateien:
   - [RAID 1 ähnlich: Mirror](#/windows-server-2022/storage-spaces/raid-1-mirror)
   - [RAID 5 ähnlich: Parity](#/windows-server-2022/storage-spaces/raid-5-parity)
 ```
-
-#### - Beispiel für `lab-umgebung/aktuelle-einstellungen.md`
-
-
-```md
-## Aktuelle Einstellungen
-
-| Plattform | OS | Virtual Switch | IP-Adresse | Internet | Status |
-|---|---|---|---|---|---|
-| Hyper-V | Server 2022 | intern & extern | 192.168.10.10 / 10.60.47.xxx | ja | Lokal |
-| Hyper-V | Windows 11 | intern | 192.168.10.106 | ja (NAT) | Domäne / Lokal |
-| Hyper-V | Ubuntu | intern & extern | 192.168.10.105 / 10.60.47.xxx | ja | Lokal |
-| Tower (Host) | Windows 11 | intern & default | 192.168.10.10x / 10.60.47.xxx | ja | Lokal |
-```
-
-## Docsify konfigurieren
+_________________________________
+## 4. Docsify konfigurieren
 In `index.html`:
-
 ```html
 <script>
   window.$docsify = {
-    name: 'Windows Server 2022 – Storage Spaces',
+    name: 'mein Notiz',
     repo: '',
     loadSidebar: true,
     subMaxLevel: 0,
@@ -83,8 +69,8 @@ In `index.html`:
   }
 </script>
 ```
-
-## Lokalen Server starten
+_________________________________
+## 5. Lokalen Server starten
 
 ```bash
 cd C:\work\docs
