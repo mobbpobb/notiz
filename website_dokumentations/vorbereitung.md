@@ -5,10 +5,9 @@ _________________________________
 ### 1. Node.js (LTS) installieren
 Website öffnen: https://nodejs.org
 ```
-> Grünen **LTS**-Button klicken.
-> Die `.msi`-Datei starten.
-> Immer **Weiter** klicken.
-> Standard-Einstellungen lassen.
+> Get Node.js
+> Option: *LTS* und Windows Installer (`.msi`)
+> Während der Installation immer **Weiter** klicken.
 ```
 In Windows-`CMD` prüfen:
 ```cmd
@@ -39,7 +38,7 @@ Im Ordner **docs** liegen zum Beispiel diese Dateien:
 - `windows-server-2022/storage-spaces/raid-1-mirror.md`
 - `windows-server-2022/storage-spaces/raid-5-parity.md`
 
-####  Beispiel für `_sidebar.md`
+####  - Beispiel für `_sidebar.md`
 
 ```md
 - [Startseite](/)
@@ -49,12 +48,13 @@ Im Ordner **docs** liegen zum Beispiel diese Dateien:
 
 - Datenträger / Storage Spaces
   - [Überblick](#/windows-server-2022/storage-spaces/overview)
-  - [RAID 0 ähnlich: Simple Layout](#/windows-server-2022/storage-spaces/raid-0-simple-layout)
+  - [RAID 0 ähnlich: Simple](#/windows-server-2022/storage-spaces/raid-0-simple)
   - [RAID 1 ähnlich: Mirror](#/windows-server-2022/storage-spaces/raid-1-mirror)
   - [RAID 5 ähnlich: Parity](#/windows-server-2022/storage-spaces/raid-5-parity)
 ```
 
-### Beispiel für `lab-umgebung/aktuelle-einstellungen.md`
+#### - Beispiel für `lab-umgebung/aktuelle-einstellungen.md`
+
 
 ```md
 ## Aktuelle Einstellungen
