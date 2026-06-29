@@ -30,7 +30,7 @@ Server-Manager
 ```
 
 ## 3. Paritätsvolume erstellen
-* `Fehler` (Erstellung über die GUI ist fehlgeschlagen):
+\* `Fehler` (Erstellung über die GUI ist fehlgeschlagen):
 ```
 Server-Manager 
 > aktualisieren 
@@ -45,7 +45,7 @@ Name:"ParityDisk"
 > Maximale
 ```
 
-* `Stattdessen`: Erstellung über die CLI (PowerShell):
+\* `Stattdessen`: Erstellung über die CLI (PowerShell):
 ```
 PowerShell (admin) 
 >New-VirtualDisk `
@@ -104,7 +104,7 @@ Server-Explorer
 Falls ja –> 
 Fazit: Dank Parität bleibt das System trotz eines Festplattenausfalls betriebsbereit und die Daten bleiben erhalten.
 
-* Hinweis: Virtuelle Festplatten (.vhdx) können auch nach dem Löschen der VM im Hyper-V-Manager im Speicherordner verbleiben.
+\* Hinweis: Virtuelle Festplatten (.vhdx) können auch nach dem Löschen der VM im Hyper-V-Manager im Speicherordner verbleiben.
 C:\ProgramData\Microsoft\Windows\Virtual Hard Disks
 
 ## 7. Reparatur und Aufheben der Warnmeldung (!)
