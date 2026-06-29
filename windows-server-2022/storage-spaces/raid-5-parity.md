@@ -130,10 +130,10 @@ Server-Manger
 -> Warnsymbol(!) verschwindet
 ```
 
-* Falls es nicht funktioniert:
+\* Falls es nicht funktioniert:
 ```
 Powershell>
-Get-PhysicalDisk | Where-Object { \$_.OperationalStatus -ne "OK" } | Set-PhysicalDisk -Usage Retired
+Get-PhysicalDisk | Where-Object { $_.OperationalStatus -ne "OK" } | Set-PhysicalDisk -Usage Retired
 Repair-VirtualDisk -FriendlyName "ParityDisk"
 Get-StorageJob
 ```
