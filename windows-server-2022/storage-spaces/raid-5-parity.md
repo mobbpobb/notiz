@@ -102,7 +102,7 @@ Server-Explorer
 ```
 
 Falls ja –> 
-Fazit: Dank Parität `bleibt das System trotz eines Festplattenausfalls betriebsbereit` und die Daten bleiben erhalten.
+Fazit: Dank Parität bleibt das System trotz eines Festplattenausfalls betriebsbereit und die Daten bleiben erhalten.
 
 * Hinweis: Virtuelle Festplatten (.vhdx) können auch nach dem Löschen der VM im Hyper-V-Manager im Speicherordner verbleiben.
 C:\ProgramData\Microsoft\Windows\Virtual Hard Disks
@@ -131,13 +131,6 @@ Server-Manger
 ```
 
 * Falls es nicht funktioniert:
-```
-Powershell>
-Get-PhysicalDisk | Where-Object { $_.OperationalStatus -ne "OK" } | Set-PhysicalDisk -Usage Retired
-Repair-VirtualDisk -FriendlyName "ParityDisk"
-Get-StorageJob
-```
-
 ```
 Powershell>
 Get-PhysicalDisk | Where-Object { \$_.OperationalStatus -ne "OK" } | Set-PhysicalDisk -Usage Retired

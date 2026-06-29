@@ -9,6 +9,9 @@
   - DNS
     - [test](windows-server-2022/dns/dnstest.md)
 
+  - DFS
+    - [Fehler: Namespace](windows-server-2022/dfs/DFS_Namespace_Synchronisationsfehler.md)
+
 - Website Dokumentations
   - [Vorbereitung](website_dokumentations/vorbereitung.md)
   - [Veröffentlichung](website_dokumentations/veroeffentlichung.md)
