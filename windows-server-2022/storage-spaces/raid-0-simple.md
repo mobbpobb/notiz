@@ -1,5 +1,8 @@
 # Speicherpool & RAID 0 (Simple)  
 
+Simple verteilt Daten über mehrere Datenträger.
+Es ist schnell, aber es gibt **keine Redundanz**.
+
 ## 1. Für „RAID (Simple)“ - Physische Datenträger hinzufügen x3
 ```
 Hyper-V 
