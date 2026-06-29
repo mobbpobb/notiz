@@ -82,7 +82,7 @@ git push
 ```
 @echo off
 color 0B
-\
+ 
 cd /d C:\work\docs
 git add .
 git commit -m "Anderung"
