@@ -7,13 +7,13 @@
     - [RAID 5 ähnlich: Parity](windows-server-2022/storage-spaces/raid-5-parity.md)
   
   - DNS
-    - [test](windows-server-2022/dns/dnstest.md)
+    - [Test](windows-server-2022/dns/dnstest.md)
 
   - DFS
     - [Fehler: Namespace](windows-server-2022/dfs/DFS_Namespace_Synchronisationsfehler.md)
   
   - Aufgaben
-    - [u29](windows-server-2022/aufgaben/u29.md)
+    - [U29](windows-server-2022/aufgaben/u29.md)
 
 - Website Dokumentations
   - [Vorbereitung](website_dokumentations/vorbereitung.md)
