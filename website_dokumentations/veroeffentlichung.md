@@ -91,5 +91,6 @@ git push
 
 
 ```
+te
 ```
 -> Die Datei als `.bat` speichern; beim Doppelklick wird sie ausgeführt.
