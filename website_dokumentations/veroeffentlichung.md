@@ -77,3 +77,15 @@ git add .
 git commit -m "Änderung"
 git push
 ```
+
+* Aktualisierung mit GitHub mit Batch File
+```
+@echo off
+color 0B
+
+cd /d C:\work\docs
+git add .
+git commit -m "Anderung"
+git push
+```
+-> Die Datei als ".bat" speichern; beim Doppelklick wird sie ausgeführt.
