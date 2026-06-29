@@ -1,7 +1,12 @@
 # Speicherpool & RAID 0 (Simple)  
 
 Simple verteilt Daten über mehrere Datenträger.
-Es ist schnell, aber es gibt **keine Redundanz**.
+Es ist schnell, aber es gibt `keine Redundanz`.
+
+## Geplante Einstellungen
+SimplePool (Disk04-06) - SimpleDisk - Simple (RAID0) 
+MirrorPool (Disk07-09) - MirrorDisk - Mirror (RAID1) (2 Mirror und 1 Host-Spare)
+ParityPool (Disk01-03) – ParityDisk - Parity (RAID5) 
 
 ## 1. Für „RAID (Simple)“ - Physische Datenträger hinzufügen x3
 ```
@@ -49,10 +54,10 @@ Server-Manager
 > „SimplePool" auswählen und dann die Laufwerksnamen erscheinen
 ```
 
-## 5. Prüfung ohne Redundanz
+## 5. Redundanz prüfen (Ergebnis: keine Redundanz)
 ```
 Server-Explorer
-> Laufwerk „F:“ 
+> Laufwerk "F:" 
 > Datei hinzufügen
 ```
 ```
@@ -65,9 +70,7 @@ Server-Manger
 > aktualisieren 
 > Das Laufwerk wird mit einem Warnsymbol (!) angezeigt
 ```
+-> Anfangs ist der Zugriff auf die Dateien auf Laufwerk "F:" weiterhin möglich.
+Nach einem Serverneustart ist jedoch kein Zugriff mehr auf Laufwerk "F:" möglich, sodass das System `ohne Redundanz` betrieben wird.
 
--> Laufwerk „F:“ Zugriff auf die Dateien ist weiterhin möglich
--> aber nach einem Server-Neustart 
--> Kein Zugriff mehr auf Laufwerk „F:“ möglich
-
---> Anders als bei Parity ist eine Reparatur nicht möglich, da die 3 Festplatten als ein einziges Simple-Volume (Striped/Spanning) erstellt wurden
+-> Anders als bei Parity ist eine `Reparatur nicht möglich`, da die drei Festplatten als ein einziges Simple-Volume (Striped/Spanning) erstellt wurden

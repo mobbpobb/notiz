@@ -3,7 +3,14 @@
 Mirror speichert Daten gespiegelt.
 Dadurch bleiben Daten auch bei einem Ausfall weiter erreichbar.
 
-## 1. Für „RAID (Mirror)“ - Speicherpool erstellen
+## Geplante Einstellungen
+SimplePool (Disk04-06) - SimpleDisk - Simple (RAID0) 
+MirrorPool (Disk07-09) - MirrorDisk - Mirror (RAID1) (2 Mirror und 1 Host-Spare)
+ParityPool (Disk01-03) – ParityDisk - Parity (RAID5) 
+
+## 1-1. Für „RAID (Mirror)“ - Physische Datenträger hinzufügen x3
+
+## 1-2. Für „RAID (Mirror)“ - Speicherpool erstellen
 ```
 Server Manager 
 > Datei/Speicherdienste 
@@ -32,9 +39,9 @@ Server Manager
 Vorbemerkungen: Laufwerk "G:"
 ```
 
-## 3. Prüfen
+## 3. Redundanz prüfen
 ```
-3-1. Server Explorer 
+3-1. Server-Explorer 
 > Laufwerk "G:" 
 > neue Datei erstellen
 
@@ -46,11 +53,11 @@ Vorbemerkungen: Laufwerk "G:"
 > aktualisieren 
 > "!"
 
-3-4. Server Neustart 
+3-4. Server neustart 
 ```
---> Zugriff auf die Dateien und Änderungen sind möglich. Das heißt, die *Redundanz (Spiegelung)* funktioniert korrekt.
+--> Zugriff auf die Dateien und Änderungen sind möglich. Das heißt, die `Redundanz (Spiegelung)` funktioniert korrekt.
 
-## 4. Reparatur?
+## 4. Prüfung: automatische Reparaturfunktion (in Arbeit)
 ```
 4-1. Physische Datenträger: 
 Laufwerk "!" (Exklusive Hot-Spare-Disk) auswählen 
@@ -60,8 +67,7 @@ Laufwerk "!" (Exklusive Hot-Spare-Disk) auswählen
 > Server 
 > neu Disk hinzufügen
 
-4-3. Server-Manger 
-> aktualisieren 
+4-3. Server-Manger
 > Physische Datenträger: Verwendung: "Hot-Spare" 
 -> "Veraltet"
 ```
