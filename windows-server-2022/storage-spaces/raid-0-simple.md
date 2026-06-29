@@ -4,9 +4,9 @@ Simple verteilt Daten über mehrere Datenträger.
 Es ist schnell, aber es gibt `keine Redundanz`.
 _________________________________
 ## Geplante Einstellungen
-SimplePool (Disk04-06) - SimpleDisk - Simple (RAID0) 
-MirrorPool (Disk07-09) - MirrorDisk - Mirror (RAID1) (2 Mirror und 1 Host-Spare)
-ParityPool (Disk01-03) – ParityDisk - Parity (RAID5) 
+SimplePool (Disk04-06) - SimpleDisk - Simple (RAID0)  
+MirrorPool (Disk07-09) - MirrorDisk - Mirror (RAID1) (2 Mirror und 1 Host-Spare) 
+ParityPool (Disk01-03) – ParityDisk - Parity (RAID5)  
 _________________________________
 ## 1. Für „RAID (Simple)“ - Physische Datenträger hinzufügen x3
 ```
