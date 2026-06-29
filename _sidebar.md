@@ -1,4 +1,4 @@
-- [Startseite](/)
+- Startseite(/)
 
 - Windows Server 2022
   - Datenträger / Storage Spaces 

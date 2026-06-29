@@ -2,12 +2,12 @@
 
 Parity speichert Daten mit Paritätsinformationen.
 Dadurch bleibt das System bei Ausfall eines Datenträgers weiter nutzbar.
-
+_________________________________
 ## Geplante Einstellungen
 SimplePool (Disk04-06) - SimpleDisk - Simple (RAID0) 
 MirrorPool (Disk07-09) - MirrorDisk - Mirror (RAID1) (2 Mirror und 1 Host-Spare)
 ParityPool (Disk01-03) – ParityDisk - Parity (RAID5) 
-
+_________________________________
 ## 1. für „RAID(Parity)” - Physische Datenträger hinzufügen x3
 ```
 Hyper-V 
