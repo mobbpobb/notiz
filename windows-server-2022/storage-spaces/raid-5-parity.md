@@ -131,11 +131,16 @@ Server-Manger
 ```
 
 * Falls es nicht funktioniert:
-```Powershell
-
+```
+Powershell>
 Get-PhysicalDisk | Where-Object { $_.OperationalStatus -ne "OK" } | Set-PhysicalDisk -Usage Retired
-
 Repair-VirtualDisk -FriendlyName "ParityDisk"
+Get-StorageJob
+```
 
+```
+Powershell>
+Get-PhysicalDisk | Where-Object { \$_.OperationalStatus -ne "OK" } | Set-PhysicalDisk -Usage Retired
+Repair-VirtualDisk -FriendlyName "ParityDisk"
 Get-StorageJob
 ```
