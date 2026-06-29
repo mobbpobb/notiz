@@ -15,9 +15,7 @@
   - Aufgaben
     - [U29](windows-server-2022/aufgaben/u29.md)
 
-- Tipp
-  - [Batch-Datei in der Taskleiste](tipp/Batch-Datei_in_der_Taskleiste.md)
-
-  - Website Dokumentations
-    - [Vorbereitung](website_dokumentations/vorbereitung.md)
-    - [Veröffentlichung](website_dokumentations/veroeffentlichung.md)
+- Website Dokumentations
+  - [Vorbereitung](website_dokumentations/vorbereitung.md)
+  - [Veröffentlichung](website_dokumentations/veroeffentlichung.md)
+  - [Batch-Datei in der Taskleiste](website_dokumentations/Batch-Datei_in_der_Taskleiste.md)
