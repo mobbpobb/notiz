@@ -78,11 +78,11 @@ git commit -m "Änderung"
 git push
 ```
 
-* Aktualisierung mit GitHub mit Batch File
+#### Aktualisierung mit GitHub mit Batch File
 ```
 @echo off
-color 0B
- 
+color 0\B
+
 cd /d C:\work\docs
 git add .
 git commit -m "Anderung"
