@@ -1,45 +1,70 @@
-# RAID 0 ähnlich: Simple Layout
+# Speicherpool & RAID 0 (Simple)  
 
-Simple Layout verteilt Daten auf mehrere Datenträger.
-Es ist schnell, aber es gibt **keine Redundanz**.
+## 1. Für „RAID (Simple)“ - Physische Datenträger hinzufügen x3
+```
+Hyper-V 
+> Server-Einstellung 
+> SCSI 
+> Festplatte:Hinzufügen 
+> Neu 
+-> Disk0x, Fest, 10GB
+```
 
-## Kurzinfo
+## 2. Speicherpool erstellen 
+```
+Server-Manager
+> Datei/Speicherdienste 
+> Speicherpools: Aktualisieren 
+> "Verfügbare Datenträger" auswählen 
+> Aufgaben:Neu 
+-> "SimplePool" 
+-> Alle drei Datenträger auswählen 
+```
 
-| Punkt | Wert |
-|---|---|
-| Pool | `SimplePool` |
-| Virtueller Datenträger | `SimpleDisk` |
-| Layout | `Simple` |
-| Laufwerk | `F:` |
-| Datenträger | 3 x 10 GB |
+## 3. Paritätsvolume erstellen
+```
+Server-Manager 
+> aktualisieren 
+> "SimplePool" auswählen 
+> Virtuelle Datenträger: Aufgaben: Neu 
+> "SimplePool" auswählen 
+> Name:"SimpleDisk" 
+> (ohne) Gehäuseinformationen aktivieren 
+> "Simple" 
+> Fest 
+> Maximale 
+> 
+Neuer Assistent erscheint
+> Vorbemerkungen 
+> weiter und erstellen (F:)
+```
 
-## Schritte
+## 4. Konfiguration prüfen
+```
+Server-Manager 
+> aktualisieren 
+> „SimplePool" auswählen und dann die Laufwerksnamen erscheinen
+```
 
-| Schritt | Ort | Aktion |
-|---|---|---|
-| 1 | Hyper-V | 3 physische Datenträger hinzufügen |
-| 2 | Server-Manager | Speicherpool `SimplePool` erstellen |
-| 3 | Server-Manager | Virtuellen Datenträger `SimpleDisk` mit Layout `Simple` erstellen |
-| 4 | Assistent | Laufwerk `F:` anlegen |
-| 5 | Test | Datei speichern und einen Datenträger entfernen |
+## 5. Prüfung ohne Redundanz
+```
+Server-Explorer
+> Laufwerk „F:“ 
+> Datei hinzufügen
+```
+```
+Hyper-V 
+> Server 
+> eine Festplatte entfernen
+```
+```
+Server-Manger 
+> aktualisieren 
+> Das Laufwerk wird mit einem Warnsymbol (!) angezeigt
+```
 
-## Kurzverfahren
+-> Laufwerk „F:“ Zugriff auf die Dateien ist weiterhin möglich
+-> aber nach einem Server-Neustart 
+-> Kein Zugriff mehr auf Laufwerk „F:“ möglich
 
-1. In Hyper-V drei neue Festplatten mit je 10 GB hinzufügen.
-2. Im Server-Manager unter **Datei- und Speicherdienste > Speicherpools** den Pool `SimplePool` erstellen.
-3. Unter **Virtuelle Datenträger** einen neuen Datenträger mit dem Namen `SimpleDisk` und dem Layout `Simple` erstellen.
-4. Im Assistenten das Laufwerk `F:` anlegen.
-5. Eine Testdatei auf `F:` speichern.
-6. In Hyper-V eine Festplatte entfernen.
-7. Im Server-Manager die Warnung `!` prüfen.
-
-## Ergebnis
-
-- Der Zugriff auf `F:` ist zuerst oft noch möglich.
-- Nach einem Neustart ist der Zugriff auf `F:` nicht mehr möglich.
-- Eine Reparatur ist hier nicht wie bei Parity vorgesehen.
-
-## Hinweis
-
-Dieses Beispiel zeigt ein **Simple Layout**, das sich ähnlich wie **RAID 0** verhält.
-Es ist nur für Übung oder zum Verstehen des Verhaltens gedacht.
+--> Anders als bei Parity ist eine Reparatur nicht möglich, da die 3 Festplatten als ein einziges Simple-Volume (Striped/Spanning) erstellt wurden
