@@ -78,7 +78,7 @@ git commit -m "Änderung"
 git push
 ```
 
-\* Aktualisierung mit GitHub mit Batch File
+\* oder mit einer Batchdatei
 ```
 @echo off
 color 0B
