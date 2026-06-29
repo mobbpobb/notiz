@@ -11,6 +11,9 @@
 
   - DFS
     - [Fehler: Namespace](windows-server-2022/dfs/DFS_Namespace_Synchronisationsfehler.md)
+  
+  - Aufgaben
+    - [u29](windows-server-2022/aufgaben/u29.md)
 
 - Website Dokumentations
   - [Vorbereitung](website_dokumentations/vorbereitung.md)
