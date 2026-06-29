@@ -79,7 +79,7 @@ git push
 ```
 
 * Aktualisierung mit GitHub mit Batch File
-```
+```bat
 @echo off
 color 0B
 
