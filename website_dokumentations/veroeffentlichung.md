@@ -80,7 +80,7 @@ git push
 
 * Aktualisierung mit GitHub mit Batch File
 ```
-@echo off
+\@echo off
 color 0B
 
 cd /d C:\work\docs
