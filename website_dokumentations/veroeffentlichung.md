@@ -88,4 +88,4 @@ git add .
 git commit -m "Anderung"
 git push
 ```
--> Die Datei als ".bat" speichern; beim Doppelklick wird sie ausgeführt.
+-> Die Datei als `.bat` speichern; beim Doppelklick wird sie ausgeführt.
