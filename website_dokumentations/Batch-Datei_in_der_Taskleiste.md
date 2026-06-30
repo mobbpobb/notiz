@@ -13,4 +13,4 @@ C:\Windows\System32\cmd.exe /c start "" "C:\Scripts\meinskript.bat"
 
 6. Jetzt Rechtsklick auf die Verknüpfung → „Weitere Optionen anzeigen“ → „An Taskleiste anheften“ (oder Verknüpfung mit der Maus in die Taskleiste ziehen).
 
- Ab jetzt startet ein Klick auf das Taskleisten-Icon deine Batch-Datei.
+-> Ab jetzt startet ein Klick auf das Taskleisten-Icon deine Batch-Datei.
