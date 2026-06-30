@@ -80,15 +80,15 @@ Server > neuer Ordner "\Desktop\Aufgabe_U29\Netzlaufwerk_U29\" erstellen > Eigen
 Server > Tools > Ressourcen-Manager für Dateiserver > Kontingentverwaltung > Kontingente > Kontingent erstellen... > Kontingentpfad: Durchsuchen > \Desktop\Aufgabe_U29\Netzlaufwerk_U29\ > Benutzerdefiniertes Kontingent erstellen > 500 MB, "Harte Kontingentgrenze"
 
 3\. Netzlaufwerke per GPO zuweisen  
-GPO > U29 > Computers > neues Objekt erstellen > das Objekt Bearbeiten > Benutzerkonfiguration > Einstellungen > Windows-Einstellungen> Laufwerkszuordnungen > Neu > Zugeordnetes Laufwerk > 
-\> Aktion: Erstellen
-\> Speicherort: \\SRV-DC01\Aufgabe_U29\Netzlaufwerk_U29
-\> Beschriften als: NetzlaufwerkU29
-\> Laufwerkbuchstabe:Verbenden: N
+GPO > U29 > Computers > neues Objekt erstellen > das Objekt Bearbeiten > Benutzerkonfiguration > Einstellungen > Windows-Einstellungen> Laufwerkszuordnungen > Neu > Zugeordnetes Laufwerk >  
+\> Aktion: Erstellen  
+\> Speicherort: \\SRV-DC01\Aufgabe_U29\Netzlaufwerk_U29  
+\> Beschriften als: NetzlaufwerkU29  
+\> Laufwerkbuchstabe:Verbenden: N  
 
-Reiter-Gemeinsame Optionen > Zielgruppenadressierung auf Elementebene > Zielgruppenadressierung.. > 
-\> Neues Element > Sicherheitsgruppe > (Gruppe) ... > "02_Teamleiter" > 
-\> Neues Element > Sicherheitsgruppe > (Gruppe) ... > "02_Abteilungsleiter" > 
+Reiter-Gemeinsame Optionen > Zielgruppenadressierung auf Elementebene > Zielgruppenadressierung.. >  
+\> Neues Element > Sicherheitsgruppe > (Gruppe) ... > "02_Teamleiter" >  
+\> Neues Element > Sicherheitsgruppe > (Gruppe) ... > "02_Abteilungsleiter" >  
 \> Menü: Elemetoptionen --> "Oder" (Wichtig!)  
 
 **Prüfen**: Win11 > Dieser PC -> NetzlaufwerkU29 (N:) wird angezeigt
@@ -159,7 +159,7 @@ a). Nutzung von HTTP soll verboten sein.
 b). POP 3 soll verboten sein  
 c). Wichtig IPv4 und IPv6 müssen nicht zwingend konfiguriert sein aber berücksichtigt  
 
-// a).- b). HTTP->TCP:80, POP3->TCP:110  
+// a-b). HTTP->TCP:80, POP3->TCP:110  
 GPO > U29 > Computers > neue GPO > Computer > Richtlinien > Windows-Einstellungen > Sicherheitseinstellungen > Windows Defender Firewall mit erweiterter Sicherheit > Windows Defender Firewall mit erweiterter Sicherheit - LDAP.. > Ausgehende Regeln > Neue Regel > Port > TCP:80 > "Verbindung blockieren" > check alle "Domäne, Privat, Öffentlich" > Name
 
 a). HTTP Prüfen: Web Browser > http://neverssl.com -> Fehler: blockiert  
