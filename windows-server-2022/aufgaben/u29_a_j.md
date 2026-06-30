@@ -149,8 +149,8 @@ Für alle Reiter:
 \> Eingehende Verbindungen: Blockieren (Standard)  
 
 **Prüfen**: Win11 > Windows Defender Wall ->  
-\1. erscheint "Zu Ihrer Sicherheit werden einige Einstellungen vom Systemadministrator verwaltet"  
-\2. keine Änderungen möglich, außer für Benutzer mit Admin-Rechten
+1\. erscheint "Zu Ihrer Sicherheit werden einige Einstellungen vom Systemadministrator verwaltet"  
+2\. keine Änderungen möglich, außer für Benutzer mit Admin-Rechten
 
 _________________________________
 ## g. Aktivierung der Windows Firewall über die AD
@@ -174,16 +174,16 @@ a). Der Zugriff auf den Ordner soll ausschließlich über die Login Daten des MA
 
 \* für t.müller von Mitarbeiter-Gruppe 
 
-\1. Ordner erstellen  
+1\. Ordner erstellen  
 C:\Users\Administrator\Desktop\Aufgabe_U29\Share\02_Vertrieb\02_Mitarbeiter\t.müller
 
-\2. GPO Verknüpfungen  
+2\. GPO Verknüpfungen  
 neu GPO unter 02_Mitarbeiter > Benutzer > Einstellungen > Windows >  Verknüpfungen  
 neu > Verknüpfung >  
 \> Reiter-Allgemein > Aktualisieren > Nanme:02_Mitarbeiter > Dateisystemobjekt > Desktop > "\\SRV-DC01\Aufgabe_U29\Share\02_Vertrieb\02_Mitarbeiter\%USERNAME%"  
 \> Reiter-Gemeinsame > Zielgruppen > 02_Mitarbeiter  
 
-\3. Ordner-Recht  
+3\. Ordner-Recht  
 \Share\ >  
 \> Freigabe: check > Share$ ($=Versteckte Freigaben) > Berechtigungen U29 -> Vollzugriff > ok >  
 \> Sicherheit: U29 vollzugriff  
@@ -195,7 +195,7 @@ neu > Verknüpfung >
 \> Sicherheit: Erweitert > Vererbung deaktivieren > ..in explizite.. >  
 \> t.müller vollzugriff, 02_Vertrieb löschen  
 
-\4. Prüfen  
+4\. Prüfen  
 b). Der Ordner soll als Ziel für Dokumenten Scans über das Netzwerk genutzt werden. Quelle Gerät Multifunktionsdrucker.   
 --> kein Multifunktionsdrucker
 
