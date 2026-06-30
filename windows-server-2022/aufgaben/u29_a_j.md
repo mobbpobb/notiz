@@ -63,7 +63,7 @@ a). Einbindung erfolgt dynamisch beim Login unabhängig vom Gerät
 
 1\. Ordnerberechtigungen einrichten
 
-*\ Bereits im Schritt „9. Hintergrund“ durchgeführt  
+\* Bereits im Schritt „9. Hintergrund“ durchgeführt  
 "\Desktop\Aufgabe_U29\" > Eigenschaften >  
 \> Reiter:Freigabe > Erweiterte Freigabe > check "Diesen Ordner freigeben", Berechtigungen > Hinzufügen > Jeder:"Vollzugriff"  
 \> Reiter:Sicherheit > Bearbeiten > Hinzufügen > "U29":"Lesen"(x3)  
