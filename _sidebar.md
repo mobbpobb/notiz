@@ -19,3 +19,6 @@
   - [Vorbereitung](website_dokumentations/vorbereitung.md)
   - [Veröffentlichung](website_dokumentations/veroeffentlichung.md)
   - [Batch-Datei in der Taskleiste](website_dokumentations/Batch-Datei_in_der_Taskleiste.md)
+
+- Tipp
+  - [Statt Cybersecurity Essentials ](tipp/statt_cybersecurity_essentials)
