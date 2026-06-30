@@ -65,13 +65,13 @@ a). Einbindung erfolgt dynamisch beim Login unabhängig vom Gerät
 
 *\ Bereits im Schritt „9. Hintergrund“ durchgeführt  
 "\Desktop\Aufgabe_U29\" > Eigenschaften >  
-> Reiter:Freigabe > Erweiterte Freigabe > check "Diesen Ordner freigeben", Berechtigungen > Hinzufügen > Jeder:"Vollzugriff"  
-> Reiter:Sicherheit > Bearbeiten > Hinzufügen > "U29":"Lesen"(x3)  
+\> Reiter:Freigabe > Erweiterte Freigabe > check "Diesen Ordner freigeben", Berechtigungen > Hinzufügen > Jeder:"Vollzugriff"  
+\> Reiter:Sicherheit > Bearbeiten > Hinzufügen > "U29":"Lesen"(x3)  
 
 Server > neuer Ordner "\Desktop\Aufgabe_U29\Netzlaufwerk_U29\" erstellen > Eigenschaften > Sicherheit > Erweitert >  
-> "Vererbung deaktivieren" > "Vererbe Berechtigungen in explizite... konvertieren" >  
-> Entfernen: Gruppen für normale Mitarbeiter und alle Mitarbeiter  
-> Hinzufügen: Prinzipal auswählen > 02_Abteilungsleiter, 02_Teamleiter > Vollzugriff  
+\> "Vererbung deaktivieren" > "Vererbe Berechtigungen in explizite... konvertieren" >  
+\> Entfernen: Gruppen für normale Mitarbeiter und alle Mitarbeiter  
+\> Hinzufügen: Prinzipal auswählen > 02_Abteilungsleiter, 02_Teamleiter > Vollzugriff  
 
 2\. Kontingent von 500 MB für den Ordner einrichten  
 
@@ -81,18 +81,17 @@ Server > Tools > Ressourcen-Manager für Dateiserver > Kontingentverwaltung > Ko
 
 3\. Netzlaufwerke per GPO zuweisen  
 GPO > U29 > Computers > neues Objekt erstellen > das Objekt Bearbeiten > Benutzerkonfiguration > Einstellungen > Windows-Einstellungen> Laufwerkszuordnungen > Neu > Zugeordnetes Laufwerk > 
-> Aktion: Erstellen
-> Speicherort: \\SRV-DC01\Aufgabe_U29\Netzlaufwerk_U29
-> Beschriften als: NetzlaufwerkU29
-> Laufwerkbuchstabe:Verbenden: N
+\> Aktion: Erstellen
+\> Speicherort: \\SRV-DC01\Aufgabe_U29\Netzlaufwerk_U29
+\> Beschriften als: NetzlaufwerkU29
+\> Laufwerkbuchstabe:Verbenden: N
 
 Reiter-Gemeinsame Optionen > Zielgruppenadressierung auf Elementebene > Zielgruppenadressierung.. > 
-> Neues Element > Sicherheitsgruppe > (Gruppe) ... > "02_Teamleiter" > 
-> Neues Element > Sicherheitsgruppe > (Gruppe) ... > "02_Abteilungsleiter" > 
-> Menü: Elemetoptionen --> "Oder" (Wichtig!)  
+\> Neues Element > Sicherheitsgruppe > (Gruppe) ... > "02_Teamleiter" > 
+\> Neues Element > Sicherheitsgruppe > (Gruppe) ... > "02_Abteilungsleiter" > 
+\> Menü: Elemetoptionen --> "Oder" (Wichtig!)  
 
 **Prüfen**: Win11 > Dieser PC -> NetzlaufwerkU29 (N:) wird angezeigt
-
 
 \* GPO-Verschiebung (Move):  
 GPO löschen -> Neue Ziel-OU > Vorhandenes Gruppenrichtlinienobjekt verknüpfen... > GPO auswählen
