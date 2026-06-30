@@ -14,13 +14,15 @@ cmd > powershell_ise.exe ise > Get-ADUser -Filter * -Properties * | Export-CSV a
 --> import_user.csv
 
 Name,Path,GivenName,DisplayName,SamAccountName,Surname,UserPrincipalName,Groups 
-DavidSchneider,"OU=03_Abteilungsleiter,OU=03_Marketing,OU=U29,DC=firma,DC=local",David,David Schneider,d.schneider,Schneider,\d.schneider@firma.local,"03_Marketing,03_Abteilungsleiter"
+DavidSchneider,"OU=03_Abteilungsleiter,OU=03_Marketing,OU=U29,DC=firma,DC=local",David,David Schneider,d.schneider,Schneider,d.schneider\@firma.local,"03_Marketing,03_Abteilungsleiter"
 
 **Erstellung des PowerShell-Skripts**  
 --> add_users.ps1
 
 1\. Einrichten des Initialpassworts  
+```
 $SecurePassword = ConvertTo-SecureString "1" -AsPlainText -Force
+```
 
 2\. CSV-Datei importieren  
 ```
@@ -41,10 +43,9 @@ Import-Csv -Path ".\import_users.csv" -Delimiter "," -Encoding UTF8 | ForEach-Ob
   $GroupList = $_.Groups -split ","
   #2. Jede Gruppe einzeln nacheinander abarbeiten (Schleife)
   foreach ($Group in $GroupList) {
-  #3. Leerzeichen entfernen und Benutzer der AD-Gruppe hinzufügen
-  Add-ADGroupMember -Identity $Group.Trim() -Members $_.SamAccountName
-
-}
+    #3. Leerzeichen entfernen und Benutzer der AD-Gruppe hinzufügen
+    Add-ADGroupMember -Identity $Group.Trim() -Members $_.SamAccountName
+  }
 }
 ```
 **Ausführung des Skripts**  
