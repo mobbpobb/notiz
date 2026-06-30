@@ -14,7 +14,7 @@ cmd > powershell_ise.exe ise > Get-ADUser -Filter * -Properties * | Export-CSV a
 --> import_user.csv
 
 Name,Path,GivenName,DisplayName,SamAccountName,Surname,UserPrincipalName,Groups 
-DavidSchneider,"OU=03_Abteilungsleiter,OU=03_Marketing,OU=U29,DC=firma,DC=local",David,David Schneider,d.schneider,Schneider,d.schneider@firma.local,"03_Marketing,03_Abteilungsleiter"
+DavidSchneider,"OU=03_Abteilungsleiter,OU=03_Marketing,OU=U29,DC=firma,DC=local",David,David Schneider,d.schneider,Schneider,\d.schneider@firma.local,"03_Marketing,03_Abteilungsleiter"
 
 **Erstellung des PowerShell-Skripts**  
 --> add_users.ps1
