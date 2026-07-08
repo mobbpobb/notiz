@@ -5,8 +5,8 @@ Virtueller Maschine (VM) rechtsklick > Sicherheit > "Trusted Platform Module" ak
  
 ### Installieren
 VM starten > "Press any Key" sofort bestätigen  -> „Ich habe keinen Product Key“ -> Windows 11 Pro -> weiter -> 
-\1. Mit Internet: > Ein Konto wird gefordert: Den VM-Switch kurz löschen, um offline zu gehen. Nicht vergessen, den Switch wieder zurückzusetzen.
-\2. Ohne Internet: > "Lassen Sie sich mit einem Netzwerk verbinden" : Shift + F10 (Es öffnet sich die Eingabeaufforderung (CMD) mit Administratorrechten) > oobe\bypassnro > weiter > „Ich habe kein Internet“ Option erscheint > 
+1\. Mit Internet: > Ein Konto wird gefordert: Den VM-Switch kurz löschen, um offline zu gehen. Nicht vergessen, den Switch wieder zurückzusetzen.  
+2\. Ohne Internet: > "Lassen Sie sich mit einem Netzwerk verbinden" : Shift + F10 (Es öffnet sich die Eingabeaufforderung (CMD) mit Administratorrechten) > oobe\bypassnro > weiter > „Ich habe kein Internet“ Option erscheint >   
 "Name" (das lokale Benutzerkonto erhält automatisch Administratorrechte) > Kennwort > Sicherheitsfrage (1-3) > Nein oder nur Erforderlich ->
 
 ### Domänenbeitritt
@@ -27,5 +27,5 @@ Windows 11 > Start > Einstellungen > System > Info > Domäne oder Arbeitsgruppe 
 \* Wenn du dich mit einem lokalen Konto anmelden möchtest, Benutzername: „.\localname“.
 
 \* Hinweis: Benutzererstellung via PowerShell
-\1. Das Passwort wird nicht direkt im Befehl mitgegeben, sondern erst nach der Ausführung des Befehls eingegeben. 
-\2. Der Benutzer wird aus der Standard-Benutzergruppe in die entsprechende OU verschoben. 
+1\. Das Passwort wird nicht direkt im Befehl mitgegeben, sondern erst nach der Ausführung des Befehls eingegeben.  
+2\. Der Benutzer wird aus der Standard-Benutzergruppe in die entsprechende OU verschoben. 

@@ -30,9 +30,9 @@ Folgende DNS-Serveradressen
 ###  Hinzufügen der Funktionen: AD (Aktive Directory), DHCP und DNS
 (im oberen Menü) Verwalten > Rollen und Features hinzufügen > weiter > Rollenbasierte oder featurebasierte Installation > Einen Server aus dem Serverpool auswählen >
 Serverrollen: 
- \1. Active Directory-Domänendienste (-> hacken -> Features hinzufügen)
- \2. DHCP-Server
- \3. DNS-Server
+ 1\. Active Directory-Domänendienste (-> hacken -> Features hinzufügen)  
+ 2\. DHCP-Server  
+ 3\. DNS-Server  
 \> weiter > installieren > (war erfolgreich) > schließen
 
 ### AD (Aktive Directory) konfigurieren
@@ -63,8 +63,8 @@ OU "IT" rechtsklick > neu > Benutzer > Vorname, Nachname, Benutzeranmeldename (z
 ### Beschränkungen für Benutzerpasswort deaktiviert
 Tools > Gruppenrichtlinienverwaltung > Gesamtstruktur > Domänen > firma.local > Default Domain Policy rechtsklick:  bearbeiten 
 Computerkonfiguration > Richtlinien > Windows Einstellungen > Sicherheitseinstellungen > Kontorichtlinien > Kennwortrichtlinien >
- \1. Kennwort muss Komplexitätsvoraussetzungen entsprechen: deaktiviert
- \2. Minimale Kennwortlänge: z.B. 1 Zeichen
+ 1\. Kennwort muss Komplexitätsvoraussetzungen entsprechen: deaktiviert  
+ 2\. Minimale Kennwortlänge: z.B. 1 Zeichen  
 aktualisieren: Eingabeaufforderung (CMD) -> gpupdate /force
 
 ### Admin-Rechte vergeben
