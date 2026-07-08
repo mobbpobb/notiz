@@ -15,7 +15,7 @@ VM starten > "Press any Key" sofort bestätigen  -> „Ich habe keinen Product K
 Win+R -> ncpa.cpl -> Der betreffende Netzwerkadapter > Eigenschaften > IPv4
  192.168.10.105	ip
  255.255.255.0	sub
- 192.168.10.1		gateway
+ 192.168.10.1	gateway
  192.168.10.10 	dns
 
 Windows 11 > Start > Einstellungen > System > Info > Domäne oder Arbeitsgruppe > Ändern > Domäne: „firma.local“ > (Authentifizierung für den Domänenbeitritt) Benutzername: Administrator, Kennwort: „!Abcd1234“ > "Willkommen in der Domäne" > ok > ok > schließen > popup: jetzt neu starten
