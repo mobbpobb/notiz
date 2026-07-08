@@ -7,7 +7,7 @@ Virtueller Computer (VM) starten
 > Weiter > Installation und automatischer Neustart 
 -> (Administrator) Kennwort: „!Abcd1234“
 ```
-/* Falls kein Login-Bildschirm (Passwort-Eingabefeld) -> (oben Menü) Aktion: STRG+ALT+ENTF(Ende))
+\* Falls kein Login-Bildschirm (Passwort-Eingabefeld) -> (oben Menü) Aktion: STRG+ALT+ENTF(Ende))
 
 ### Windows Server 2022 Konfiguration
 Anmelden > Server-Manager (Automatisch) >  Meldungen schließen und "Willkommen-" ausblenden
@@ -25,15 +25,15 @@ Folgende IP-Adresse
 Folgende DNS-Serveradressen
  192.168.10.10 
 ```
-/> ok > schließen
+\> ok > schließen
 
 ###  Hinzufügen der Funktionen: AD (Aktive Directory), DHCP und DNS
 (im oberen Menü) Verwalten > Rollen und Features hinzufügen > weiter > Rollenbasierte oder featurebasierte Installation > Einen Server aus dem Serverpool auswählen >
 Serverrollen: 
- /1. Active Directory-Domänendienste (-> hacken -> Features hinzufügen)
- /2. DHCP-Server
- /3. DNS-Server
-/> weiter > installieren > (war erfolgreich) > schließen
+ \1. Active Directory-Domänendienste (-> hacken -> Features hinzufügen)
+ \2. DHCP-Server
+ \3. DNS-Server
+\> weiter > installieren > (war erfolgreich) > schließen
 
 ### AD (Aktive Directory) konfigurieren
 (im oberen Menü) Warnflagge mit "!" klicken > Server zu einem Domänencontroller heraufstufen > „Neue Gesamtstruktur hinzufügen“ anhacken; Name der Stammdomäne: „firma.local“ > (Vorgang läuft, blauer Balken) > Kennwort: „!Abcd1234“ (für Notfall-Passwort) > weiter > DNS Option: kein Haken > (automatisch ausgefüllt) Der NetBIOS-Domänenname: „FIRMA“ > weiter -> installieren -> automatischer Neustart
@@ -44,7 +44,7 @@ Serverrollen:
 ### DHCP einstellen 1
 (im oberem Menü) Tools > DHCP > firma.local > IPv4 rechtsklick: Neuer Bereich > "Name" > Start-IP:192.168.10.100, End-IP: 192.168.10.199 > Ausschlüsse und Verzögerung hinzufügen: nix  > Leasedauer: egal > DHCP-Optionen: ja > Router(Standardgateway): 192.168.10.1 > Domänenname und DNS-Server: (Wird automatisch ausgefüllt) firma.local und IP-Address (Falls die IP-Addresse nicht erscheint, Servernamen eingeben > „Auflösen“ > IP-Adresse erscheint > „Hinzufügen“) > WINS-Server: nix > Bereich aktivieren: ja > Fertig stellen
 
-/* WINS: Nur für Uralt-Apps (NetBIOS). Rest: Immer DNS.
+\* WINS: Nur für Uralt-Apps (NetBIOS). Rest: Immer DNS.
 
 ### DHCP einstellen 2
 Tools > DHCP > firma.local > IPv4 rechtsklick: Eigenschaften > DNS-Reiter > DNS Einträge immer dynamisch aktualisieren > Übernehmen > ok
@@ -55,7 +55,7 @@ Tools > DHCP > firma.local > IPv4 rechtsklick: Eigenschaften > DNS-Reiter > DNS 
 ### Organisationseinheit (OU) in Active Directory erstellen
 Tools > Active Directory Benutzer und Computer > „firma.local“ rechtsklick > Neu > Organisationseinheit -> Name > ok
 
-/ * Wenn OU und Gruppe den gleichen Namen haben, muss man zuerst die OU erstellen.
+\ * Wenn OU und Gruppe den gleichen Namen haben, muss man zuerst die OU erstellen.
 
 ### Neuen Benutzer in OU erstellen
 OU "IT" rechtsklick > neu > Benutzer > Vorname, Nachname, Benutzeranmeldename (z.B. edward snowden; e.snowden@firmal.local entspricht der Login-ID) > weiter > Kennwort eingeben und "Kennwort läuft nie ab" hacken (und Fehlermeldung ok) > Fertig stellen
@@ -63,8 +63,8 @@ OU "IT" rechtsklick > neu > Benutzer > Vorname, Nachname, Benutzeranmeldename (z
 ### Beschränkungen für Benutzerpasswort deaktiviert
 Tools > Gruppenrichtlinienverwaltung > Gesamtstruktur > Domänen > firma.local > Default Domain Policy rechtsklick:  bearbeiten 
 Computerkonfiguration > Richtlinien > Windows Einstellungen > Sicherheitseinstellungen > Kontorichtlinien > Kennwortrichtlinien >
- /1. Kennwort muss Komplexitätsvoraussetzungen entsprechen: deaktiviert
- /2. Minimale Kennwortlänge: z.B. 1 Zeichen
+ \1. Kennwort muss Komplexitätsvoraussetzungen entsprechen: deaktiviert
+ \2. Minimale Kennwortlänge: z.B. 1 Zeichen
 aktualisieren: Eingabeaufforderung (CMD) -> gpupdate /force
 
 ### Admin-Rechte vergeben

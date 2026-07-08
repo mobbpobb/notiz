@@ -12,9 +12,9 @@ Hyper-V > (rechtes Menü) Manager für virtuelle Switches > Intern/Extern > Virt
 ## Virtueller Maschine (VM) einstellen (für Windows Server 2022 und Windows 11)
 Hyper-V > neu > weiter -> "Name" > „Generation 2“ (UEFI) -> "8192"MB -> Verbindung: " den oben erstellten Switch" -> Größe "80"GB > (zweite Option) Betriebssystem von einer startbaren Imagedatei installieren -> Durchsuchen -> „ISO-Datei“ -> Öffnen > weiter > Fertig stellen
 
-/* virtuellen Festplattendateien (.vhdx) gespeichert
+\* virtuellen Festplattendateien (.vhdx) gespeichert
 (z.B.) C:\ProgramData\Microsoft\Windows\Virtual Hard Disks
 
 ## VM‑Einstellungen
-/1. Prüfpunkte > „Prüfpunkte aktivieren“ aushacken
-/2. Automatische Starkaktion > Keine Aktion
+\1. Prüfpunkte > „Prüfpunkte aktivieren“ aushacken
+\2. Automatische Starkaktion > Keine Aktion
