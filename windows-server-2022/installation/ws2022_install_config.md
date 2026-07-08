@@ -28,8 +28,8 @@ Folgende DNS-Serveradressen
 \> ok > schließen
 
 ###  Hinzufügen der Funktionen: AD (Aktive Directory), DHCP und DNS
-(im oberen Menü) Verwalten > Rollen und Features hinzufügen > weiter > Rollenbasierte oder featurebasierte Installation > Einen Server aus dem Serverpool auswählen >
-Serverrollen: 
+(im oberen Menü) Verwalten > Rollen und Features hinzufügen > weiter > Rollenbasierte oder featurebasierte Installation > Einen Server aus dem Serverpool auswählen >  
+Serverrollen:  
  1\. Active Directory-Domänendienste (-> hacken -> Features hinzufügen)  
  2\. DHCP-Server  
  3\. DNS-Server  
@@ -55,19 +55,20 @@ Tools > DHCP > firma.local > IPv4 rechtsklick: Eigenschaften > DNS-Reiter > DNS 
 ### Organisationseinheit (OU) in Active Directory erstellen
 Tools > Active Directory Benutzer und Computer > „firma.local“ rechtsklick > Neu > Organisationseinheit -> Name > ok
 
-\ * Wenn OU und Gruppe den gleichen Namen haben, muss man zuerst die OU erstellen.
+\* Wenn OU und Gruppe den gleichen Namen haben, muss man zuerst die OU erstellen.
 
 ### Neuen Benutzer in OU erstellen
 OU "IT" rechtsklick > neu > Benutzer > Vorname, Nachname, Benutzeranmeldename (z.B. edward snowden; e.snowden@firmal.local entspricht der Login-ID) > weiter > Kennwort eingeben und "Kennwort läuft nie ab" hacken (und Fehlermeldung ok) > Fertig stellen
 
 ### Beschränkungen für Benutzerpasswort deaktiviert
-Tools > Gruppenrichtlinienverwaltung > Gesamtstruktur > Domänen > firma.local > Default Domain Policy rechtsklick:  bearbeiten 
-Computerkonfiguration > Richtlinien > Windows Einstellungen > Sicherheitseinstellungen > Kontorichtlinien > Kennwortrichtlinien >
+Tools > Gruppenrichtlinienverwaltung > Gesamtstruktur > Domänen > firma.local > Default Domain Policy rechtsklick: bearbeiten  
+
+Computerkonfiguration > Richtlinien > Windows Einstellungen > Sicherheitseinstellungen > Kontorichtlinien > Kennwortrichtlinien >  
  1\. Kennwort muss Komplexitätsvoraussetzungen entsprechen: deaktiviert  
  2\. Minimale Kennwortlänge: z.B. 1 Zeichen  
 aktualisieren: Eingabeaufforderung (CMD) -> gpupdate /force
 
 ### Admin-Rechte vergeben
-Benutzer rechtsklick > Eigenschaften > Mitglied von: „Dömanen-Admin“
- Domänen-Admin: Für alle PCs und Server in der Domäne
- Administrator: Nur für diesen Server
+Benutzer rechtsklick > Eigenschaften > Mitglied von: „Dömanen-Admin“  
+ Domänen-Admin: Für alle PCs und Server in der Domäne  
+ Administrator: Nur für diesen Server  
