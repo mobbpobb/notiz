@@ -16,5 +16,5 @@ Hyper-V > neu > weiter -> "Name" > „Generation 2“ (UEFI) -> "8192"MB -> Verb
 (z.B.) C:\ProgramData\Microsoft\Windows\Virtual Hard Disks
 
 ## VM‑Einstellungen
-\1. Prüfpunkte > „Prüfpunkte aktivieren“ aushacken
-\2. Automatische Starkaktion > Keine Aktion
+1\. Prüfpunkte > „Prüfpunkte aktivieren“ aushacken  
+2\. Automatische Starkaktion > Keine Aktion
